@@ -1,0 +1,23 @@
+h1{
+    background-color: rgb(233, 219, 155);
+    text-align: center;
+    color:red;
+}
+
+.p1 {
+    color:rgb(20, 5, 74);
+    text-align: center;
+    background-color: rgb(243, 160, 160);
+    transform: rotateX(150deg);
+}
+h2{
+    background-color:rgb(247, 219, 183);
+    text-align: center;
+    color:rgb(26, 9, 103)
+}
+.p2 {
+    color: rgb(33, 84, 180);
+    text-align: center;
+    background-color: burlywood;
+    
+}
