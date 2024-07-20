@@ -1,0 +1,21 @@
+$warna: salmon;
+$warna2: rgb(3, 54, 70); 
+$myfont: 'Roboto';
+body {
+    background-color: lightblue;
+    header {
+        h1 {
+        font-size: 30px;
+        color: $warna2;
+        font-family: $myfont;
+        } 
+
+    }
+    h2 {
+        font-size: 30px;
+        color: $warna2;
+    }
+    p {
+        color: $warna;
+    }
+ }   

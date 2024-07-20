@@ -1,0 +1,15 @@
+body {
+  background-color: lightblue;
+}
+body header h1 {
+  font-size: 30px;
+  color: rgb(3, 54, 70);
+  font-family: Roboto;
+}
+body h2 {
+  font-size: 30px;
+  color: rgb(3, 54, 70);
+}
+body p {
+  color: salmon;
+}/*# sourceMappingURL=style.css.map */
