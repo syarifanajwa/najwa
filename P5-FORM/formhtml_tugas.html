@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Membuat Form</title>
+        <style>
+            fieldset{
+                background-color: burlywood;
+            }
+            legend{
+                background-color: khaki;
+            }
+</style>
+</head>
+<body>
+  <form>
+    <fieldset>
+        <legend>BIODATA PRIBADI</legend>
+<table>
+<tr>
+   <td>
+    <label for="fname">Nama Lengkap </label></td>
+   <td>:</td>
+   <td><input type="text" id="fname" name="fname" value="Syarifa Najwa">
+    </td>
+</tr>
+ <tr>
+    <td><label for="alamat">Alamat</label></td>
+    <td>:</td>
+    <td><textarea></textarea></td>
+ </tr>
+ <tr>
+    <td><label for="ttl">TTL</label></td>
+    <td>:</td>
+    <td><input type="text" id="ttl" name="ttl" value="Surabaya"></td>
+    <td><input type="date"><br>
+    </td>
+</tr>
+<tr>
+    <td><label for="gender">Jenis Kelamin</label></td>
+    <td>:</td>
+    <td>
+        <input type='radio' name='Kelamin' value="Laki - laki"checked />laki - laki
+        <input type='radio' name='Kelamin' value="Perempuan"checked />Perempuan
+    </td> 
+ </tr>
+ <tr>
+   <td>Agama</td>
+   <td>:</td>
+   <td>
+    <select><option>konghucu</option>
+    <option selected>Islam</option>
+    <option>Kristen</option>
+    <option>Buddha</option>
+    <option>Hindu</option></select>
+    </td>
+ </tr>
+ <tr>
+   <td>Hobby</td>
+   <td>:</td>
+   <td><input type='checkbox'/><label for='hobi'>Masak</label></td>
+   <td><input type='checkbox'</td>
+ </tr>
+<tr>
+    <td><label for="motto">Motto</label></td>
+    <td>:</td>
+    <td><textarea></textarea></td>
+</tr>
+<tr>
+    <td>
+    
+        <input type="reset" value="Reset"><input type="reset" value="Simpan">
+    </td>
+</form>
+</body>
+
+</html>
