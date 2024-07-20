@@ -1,0 +1,91 @@
+/* Box Model */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.fixed-nav {
+  background: #444;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.fixed-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.fixed-nav li {
+  margin: 0 15px;
+}
+
+.fixed-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 300px;
+  background: #ddd;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  float: right;
+}
+
+/* Floating Object Position */
+.sidebar {
+  float: right;
+}
+
+/* Fixed vs Fluid Layout */
+@media (max-width: 768px) {
+  .content,
+  .sidebar {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

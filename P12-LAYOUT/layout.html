@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Helvetica;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: left;
+        background-image: url(img/background.jpeg);
+      }
+      .header h1 {
+        font-size: 50px;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 59%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 30%;
+        background-color: #f1f1f1;
+        padding-left: 50px;
+      }
+
+      /*  image */
+      .image {
+        background-color: #fff;
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row::after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Websiteku</h1>
+      <p>Resize the browser window to see the effect.</p>
+    </div>
+
+    <div class="topnav">
+      <a href="#">Home</a>
+      <a href="#">Berita</a>
+      <a href="#">Sepakbola</a>
+      <a href="#" style="float: right">Indeks</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Pembalap Moto GP</h2>
+          <h5>1. Valentino Rossi</h5>
+          <div class="image">
+            <img src="https://akcdn.detik.net.id/visual/2021/03/02/yamaha-yzr-m1-valentino-rossi-di-tim-petronas-srt-1_169.jpeg?w=650" alt="rossi" class="image" />
+          </div>
+          <p>Valentino Rossi adalah seorang pembalap mobil profesional Italia yang saat ini turun dalam ajang Kejuaraan Ketahanan Dunia FIA bersama tim Team WRT.</p>
+        </div>
+        <div class="card">
+          <h5>2. Marc Marquez</h5>
+          <div class="image">
+            <img src="https://img.okezone.com/okz/500/library/images/2024/01/21/qdyazsx71kyspcbh9587_18704.jpg" alt="marc" class="image" />
+          </div>
+          <p>Marc Márquez Alentà adalah seorang pembalap Grand Prix Sepeda Motor profesional Spanyol, yang membalap untuk Repsol Honda sejak debutnya di MotoGP pada tahun 2013.</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h3>Menyesal Gagal Juara tahun 2023, Bagnaia: Saya Punya Motor Terbaik Saat Itu</h3>
+          <img src="https://cdn.medcom.id/dynamic/content/2023/03/26/1551413/5bQnOpWKGo.jpg?w=480" alt="pecco" class="image" />
+          <p><a href="">Read more</a></p>
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg"><p>Image</p></div>
+          <div class="fakeimg"><p>Image</p></div>
+          <div class="fakeimg"><p>Image</p></div>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>Some text..</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>

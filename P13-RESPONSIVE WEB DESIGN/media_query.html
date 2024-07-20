@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Media Query</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .content {
+            padding: 1rem;
+        }
+
+        .box {
+            background-color: #f4f4f4;
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+        }
+
+        /* Media query untuk layar dengan lebar minimum 600px */
+        @media (min-width: 600px) {
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .box {
+                flex: 1 1 calc(50% - 2rem);
+                margin: 1rem;
+            }
+        }
+
+        /* Media query untuk layar dengan lebar minimum 900px */
+        @media (min-width: 900px) {
+            .box {
+                flex: 1 1 calc(33.33% - 2rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contoh Media Query</h1>
+    </header>
+    
+    <div class="content">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <div class="box">Box 6</div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Contoh Media Query.</p>
+    </footer>
+</body>
+</html>
